@@ -14,6 +14,7 @@ GREEN = "\033[1;32m"
 DEFAULT = "\033[0m"  # Reset
 
 def check_argv():
+    global unit
     if len(sys.argv) == 1:
         unit = 'GB' # Default
     elif check_unit_input(sys.argv[1]):
